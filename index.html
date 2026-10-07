@@ -74,6 +74,11 @@
         "Терапия принятия и ответственности (ACT)",
         "Психодрама"
       ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Ассоциация специалистов в сфере контекстуально-поведенческой науки",
+        "alternateName": "АКПН"
+      },
       "sameAs": [
         "https://t.me/VikaMamina"
       ]
@@ -333,6 +338,9 @@
   .edu-card h3 { font-size: 22px; }
   .edu-program { margin: 8px 0 0; font-size: 15px; color: var(--ink-soft); line-height: 1.5; }
   .edu-comment { margin: 18px 0 0; padding-top: 18px; border-top: 1px solid rgba(100, 115, 90, .3); font-size: 16px; line-height: 1.6; }
+  .edu-note { margin: clamp(40px, 5vw, 56px) 0 0; padding-top: clamp(24px, 3vw, 32px); border-top: 1px solid var(--line); font-size: 18px; line-height: 1.6; }
+  .edu-note strong { font-weight: 600; }
+  @media (max-width: 960px) { .edu-note { max-width: 560px; margin-left: auto; margin-right: auto; } }
 
   @media (max-width: 960px) { .edu-grid { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; } .edu-card + .edu-card { margin-top: 16px; } }
 
@@ -428,6 +436,10 @@
   /* Маркеры списка запросов — ростки, как в разделителе */
   .with-list li { padding-left: 44px; }
   .with-list li::before { left: 0; top: 19px; width: 26px; height: 26px; border-radius: 0; transform: none; opacity: 1; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 38C20 31 19.5 25 20.5 19' fill='none' stroke='%237C9A69' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M20.5 20C22 12 28 7 36 7C35.5 15 29 21 20.5 20Z' fill='%2393B07E'/%3E%3Cpath d='M20 24C17 17 11 14 5 15C6.5 21.5 12.5 25.5 20 24Z' fill='%23B7CBA6'/%3E%3Cpath d='M21 19.5L33 9.5M19.5 23.5L8.5 16.5' fill='none' stroke='%23fff' stroke-width='.9' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E") no-repeat center / contain; }
+
+  /* Приписка про членство в АКПН под дипломами — с таким же ростком, как пункты списка запросов */
+  .edu-note { position: relative; padding-left: 44px; }
+  .edu-note::before { content: ""; position: absolute; left: 0; top: clamp(24px, 3vw, 32px); width: 28px; height: 28px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 38C20 31 19.5 25 20.5 19' fill='none' stroke='%237C9A69' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M20.5 20C22 12 28 7 36 7C35.5 15 29 21 20.5 20Z' fill='%2393B07E'/%3E%3Cpath d='M20 24C17 17 11 14 5 15C6.5 21.5 12.5 25.5 20 24Z' fill='%23B7CBA6'/%3E%3Cpath d='M21 19.5L33 9.5M19.5 23.5L8.5 16.5' fill='none' stroke='%23fff' stroke-width='.9' stroke-linecap='round' opacity='.6'/%3E%3C/svg%3E") no-repeat center / contain; }
 
   h1, h2, h3 { font-weight: 600; }
   .brand { text-transform: uppercase; font-weight: 600; font-size: 15px; letter-spacing: .16em; }
@@ -722,6 +734,7 @@
             <p class="edu-comment">Терапия принятия и&nbsp;ответственности&nbsp;— это основной подход, в&nbsp;котором я&nbsp;веду психотерапевтическую работу. Это призма, через которую я&nbsp;смотрю на&nbsp;психологические трудности. Это не&nbsp;истина в&nbsp;последней инстанции о&nbsp;том, как устроен мир и&nbsp;каждый из&nbsp;нас, а&nbsp;такой способ взаимодействия с&nbsp;собой и&nbsp;с&nbsp;жизнью, который соответствует моим ценностям. И&nbsp;инструмент, которому я&nbsp;благодарна, когда замечаю, как жизнь моих клиентов становится лучше.</p>
           </article>
         </div>
+        <p class="edu-note">Также я&nbsp;являюсь <strong>действующим членом АКПН</strong> (Ассоциации специалистов в&nbsp;сфере контекстуально-поведенческой науки).</p>
       </div>
     </div>
   </section>
